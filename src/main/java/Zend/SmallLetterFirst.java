@@ -18,17 +18,15 @@ public class SmallLetterFirst {
         List<String>upperStr=new ArrayList<>();
         List<String>lowerStr=new ArrayList<>();
         List<String>result=new ArrayList<>();
-        for(int i=0;i<inputs.length;i++){
-            if(Character.isUpperCase(inputs[i]))
-                upperStr.add(""+inputs[i]);
-            if(Character.isLowerCase(inputs[i]))
-                lowerStr.add(""+inputs[i]);
+        for (char input : inputs) {
+            if (Character.isUpperCase(input))
+                upperStr.add("" + input);
+            if (Character.isLowerCase(input))
+                lowerStr.add("" + input);
         }
         result.addAll(lowerStr);
         result.addAll(upperStr);
         return result.toString();
     }
-    public static void main(String[] args) {
-        System.out.println(SmallLetterFirst.printSmallLetterFirst("ABcdEFgh"));
-    }
+
 }

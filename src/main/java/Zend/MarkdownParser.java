@@ -61,7 +61,7 @@ public class MarkdownParser {
     private String getHeader(int n){
       System.out.println(n);
         if(n>=1 && n<=6){
-            String s = switch (n) {
+            return switch (n) {
                 case 1-> "<h1> </h1>";
                 case 2-> "<h2> </h2>";
                 case 3-> "<h3> </h3>";
@@ -70,15 +70,8 @@ public class MarkdownParser {
                 case 6-> "<h6> </h6>";
                 default-> throw new IllegalStateException("Unexpected value: " + n);
             };
-            return s;
         }
         return "";
     }
-    public static void main(String[] args) {
-        MarkdownParser markdownParser=new MarkdownParser();
-        String result="";
-        result=markdownParser.getMarkDown(" Header");
-        System.out.println(result);
 
-    }
 }

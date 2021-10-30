@@ -33,17 +33,14 @@ public class MiddleCharacter {
         int middle=size/2;
         //if odd send a middle element or if even the middle two
         if(size%2!=0)//if odd
-            return new String(String.valueOf(inputs[middle]));
+            return String.valueOf(inputs[middle]);
         else
-           return new String(String.valueOf(inputs[middle-1])+String.valueOf(inputs[middle]));
+           return inputs[middle - 1] + String.valueOf(inputs[middle]);
     }
 
     /** TODO- Implement using stream */
     private String getMiddleUsingStream(String str){
         return null;
     }
-    public static void main(String[] args) {
-        MiddleCharacter middleCharacter=new MiddleCharacter();
-        System.out.println(middleCharacter.getMiddle("ABCD"));
-    }
+
 }

@@ -52,14 +52,4 @@ public class PairSum {
         return false;
     }
 
-    public static void main(String[] args) {
-        PairSum twoSum=new PairSum();
-        int [] arrA={10, 15, 3, 7};
-        int [] arrB= {2, 5, 6, 7};
-        int k=17,A=11,B=18,C=10,D=9;
-        System.out.println(twoSum.isPairSumUsingTwoPointers(arrA, k));//true
-        System.out.println(twoSum.isPairSumUsingTwoPointers(arrA, A));//false
-        System.out.println(twoSum.isPairSumUsingTwoPointers(arrB, B));// false
-        System.out.println(twoSum.isPairSumUsingTwoPointers(arrB, A));// true
-    }
 }

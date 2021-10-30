@@ -26,9 +26,6 @@ class FizzBuzz{
                  .forEach(System.out::println);
      }
 
-    public static void main(String[] args) {
-        FizzBuzz.fizzBuzz(15);
-    }
 }
 public class FuzzyBuzz {
     private void fuzzBuzz(int n){
@@ -38,10 +35,6 @@ public class FuzzyBuzz {
                 .forEach(System.out::println);
     }
 
-    public static void main(String[] args) {
-        FuzzyBuzz fuzzyBuzz=new FuzzyBuzz();
-        fuzzyBuzz.fuzzBuzz(10);
-    }
 }
 
 /**
@@ -75,10 +68,6 @@ class LeetCodeFizzBuzz{
                 .mapToObj(i->
                         (i%5==0 && i%3==0)? "FizzBuzz": (i%3==0) ?
                                 "Fizz": (i%5==0 ) ?  "Buzz": i).map(Objects::toString).collect(Collectors.toList());
+    }
 
-    }
-    public static void main(String[] args) {
-        LeetCodeFizzBuzz leetCodeFizzBuzz=new LeetCodeFizzBuzz();
-        leetCodeFizzBuzz.fizzBuzz(5).stream().forEach(System.out::println);
-    }
 }

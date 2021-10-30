@@ -42,18 +42,4 @@ public class TwoSumSorted {
         throw new IllegalArgumentException("No match!!");
     }
 
-    public static void main(String[] args) {
-        TwoSumSorted twoSumSorted=new TwoSumSorted();
-        int num1[]={2,7,11,15};
-        int num2[]={2,3,4};
-        int num3[]={3,3};
-        int A=9,B=6,C=9;
-        int [] num=new int[2];
-
-        num= twoSumSorted.twoSum(num1,A );
-        System.out.println(num[0] +" "+ num[1]);
-
-        num= twoSumSorted.twoSum(num2,B);
-        System.out.println(num[0] +" "+num[1]);
-    }
 }

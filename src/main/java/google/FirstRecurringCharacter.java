@@ -28,21 +28,12 @@ public class FirstRecurringCharacter {
     private static String getFirstRecurringCharacterUsingMemory(String str){
          List<Character> inputs=new ArrayList<>();
         char[] chars=str.toCharArray();
-        for(int i=0;i < chars.length;i++){
-            if(inputs.contains(chars[i]))
-                return Character.toString(chars[i]);
-            inputs.add(chars[i]);
-
+        for (char aChar : chars) {
+            if (inputs.contains(aChar))
+                return Character.toString(aChar);
+            inputs.add(aChar);
         }
         return "none";
     }
-    public static void main(String[] args) {
-        System.out.println(FirstRecurringCharacter.getFirstRecurringCharacter("ABCDE"));//none
-        System.out.println(FirstRecurringCharacter.getFirstRecurringCharacter("ABCBD"));//B
-        System.out.println(FirstRecurringCharacter.getFirstRecurringCharacter("ABCDEA"));//A
 
-        System.out.println(FirstRecurringCharacter.getFirstRecurringCharacterUsingMemory("ABCDE"));//none
-        System.out.println(FirstRecurringCharacter.getFirstRecurringCharacterUsingMemory("ABCBD"));//B
-        System.out.println(FirstRecurringCharacter.getFirstRecurringCharacterUsingMemory("ABCDEA"));//A
-    }
 }

@@ -35,7 +35,7 @@ import java.util.*;
 public class ValidParentheses {
     public boolean isValid(String s) {
         if (s.length() %2==1) return false;
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
             if (c == '(')
                 stack.push(')');
@@ -49,14 +49,13 @@ public class ValidParentheses {
         return stack.isEmpty();
     }
     public boolean isValidWithMap(String s) {
-        Map<Character,Character> mappings = new HashMap<Character,Character>(){{
+        Map<Character,Character> mappings = new HashMap<>() {{
             put(')', '(');
             put('}', '{');
             put(']', '[');
         }};
 
         Stack<Character> letters = new Stack<>();
-
         for(int i = 0; i < s.length(); i++){
             char temp = s.charAt(i);
             if(mappings.containsKey(temp)){
@@ -70,11 +69,4 @@ public class ValidParentheses {
         return letters.isEmpty();
     }
 
-    public static void main(String[] args) {
-        ValidParentheses validParentheses=new ValidParentheses();
-        System.out.println(validParentheses.isValid("()[]{}"));
-        System.out.println(validParentheses.isValidWithMap("()[]{}"));
-        System.out.println(validParentheses.isValid("{[]}"));
-        System.out.println(validParentheses.isValidWithMap("{[]}"));
-    }
 }

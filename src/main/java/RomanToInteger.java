@@ -56,7 +56,7 @@ import java.util.Map;
 public class RomanToInteger {
     private static Map<Character,Integer> map;
     static {
-        map=new HashMap<Character,Integer>();
+        map= new HashMap<>();
         map.put('I', 1);
         map.put('V', 5);
         map.put('X', 10);
@@ -66,7 +66,6 @@ public class RomanToInteger {
         map.put('M',1000);
     }
     public int romanToInt(String s) {
-
         int convertedNumber=0;
         for(int i=0;i<s.length();i++){
             /* getting the current number */

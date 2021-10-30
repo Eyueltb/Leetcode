@@ -38,10 +38,4 @@ public class ValidPalindrome {
         return true;
     }
 
-    public static void main(String[] args) {
-        ValidPalindrome validPalindrome=new ValidPalindrome();
-        System.out.println(validPalindrome.isValidPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(validPalindrome.isValidPalindrome("race a car"));
-        System.out.println(validPalindrome.isValidPalindrome("madam"));
-    }
 }

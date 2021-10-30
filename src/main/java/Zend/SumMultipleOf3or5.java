@@ -30,15 +30,6 @@ public class SumMultipleOf3or5 {
         }
         return sum;
     }
-    private int getSumMultipleOf3or5Stream(int n){
-        //Step 1- change n to stream
-        int [] nums =new int [n];
-        for(int i=0;i<n;i++)// IntStream.range(0,n)
-            nums[i]=i;
-        //step 2- sum using stream
-        return Arrays.stream(nums).filter(i->i%3==0 || i%5==0).sum();
-
-    }
     private int getSumMul3or5StreamBest(int n){
         return IntStream
                     .range(0,n)
@@ -46,14 +37,4 @@ public class SumMultipleOf3or5 {
                     .sum();
     }
 
-    public static void main(String[] args) {
-        SumMultipleOf3or5 sumMultipleOf3or5=new SumMultipleOf3or5();
-        System.out.println(sumMultipleOf3or5.getSumMultipleOf3or5(10));//23
-        System.out.println(sumMultipleOf3or5.getSumMultipleOf3or5(200));//9168
-        System.out.println(sumMultipleOf3or5.getSumMultipleOf3or5Stream(10));//23
-        System.out.println(sumMultipleOf3or5.getSumMultipleOf3or5Stream(200));//9168
-
-        System.out.println(sumMultipleOf3or5.getSumMul3or5StreamBest(10));//23
-        System.out.println(sumMultipleOf3or5.getSumMul3or5StreamBest(200));//9168
-    }
 }

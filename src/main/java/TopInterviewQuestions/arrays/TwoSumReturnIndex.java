@@ -56,19 +56,4 @@ public class TwoSumReturnIndex {
        throw new IllegalArgumentException("No match");
    }
 
-    public static void main(String[] args) {
-        TwoSumReturnIndex twoSumReturnIndex =new TwoSumReturnIndex();
-        int num1[]={2,7,11,15};
-        int num2[]={3,2,4};
-        int num3[]={3,3};
-        int A=9,B=6,C=9;
-        int [] num=new int[2];
-
-        num= twoSumReturnIndex.getTwoSumIndex(num1,A );
-        System.out.println(num[0] +" "+ num[1]);
-        num= twoSumReturnIndex.getTwoSumIndex(num2,B);
-        System.out.println(num[0] +" "+ num[1]);
-        num= twoSumReturnIndex.getTwoSumIndex(num3,B);
-        System.out.println(num[0] +" "+num[1]);
-    }
 }
