@@ -10,13 +10,16 @@ import java.util.stream.IntStream;
 public class MultipleOfFour {
     private static void PrintMultipleOfFour() {
         for (int i = 133; i >= 1; i--)
-        {
-           if (i % 4 == 0)
+          if (i % 4 == 0)
            System.out.println(i);
-        }
+
    }
     private static void PrintMultipleOfFourStream(int from, int to) {
         IntStream.rangeClosed(from,to).map(i->to-i+from).filter(i->i % 4 == 0).forEach(System.out::println);
     }
-
+    public static void main(String[] args) {
+        MultipleOfFour.PrintMultipleOfFour();
+        System.out.println("..");
+        MultipleOfFour.PrintMultipleOfFourStream(1,133);
+    }
 }
