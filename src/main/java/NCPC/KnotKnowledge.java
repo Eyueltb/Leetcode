@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class KnotKnowledge {
     private static int missingNumber(int[] A, int [] B){
-        return Math.abs(Arrays.stream(A).sum()-Arrays.stream(B).sum());
+        return Arrays.stream(A).sum()-Arrays.stream(B).sum();
     }
     public static void main(String[] args) {
         int [] A={3,2,5,9,8};
