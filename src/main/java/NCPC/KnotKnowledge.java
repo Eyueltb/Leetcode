@@ -10,11 +10,14 @@ import java.util.Arrays;
  */
 public class KnotKnowledge {
     private static int missingNumber(int[] A, int [] B){
-        return Arrays.stream(A).sum()-Arrays.stream(B).sum();
+        if(A.length > B.length)
+          return Arrays.stream(A).sum()-Arrays.stream(B).sum();
+        else
+            return Arrays.stream(B).sum()-Arrays.stream(A).sum();
     }
     public static void main(String[] args) {
-        int [] A={3,2,5,9,8};
-        int [] B={3,9,5,8};
+        int [] B={3,2,5,9,8};
+        int [] A={3,9,5,8};
         System.out.println(KnotKnowledge.missingNumber(A,B));
     }
 }
