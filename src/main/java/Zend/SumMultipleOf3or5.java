@@ -33,7 +33,7 @@ public class SumMultipleOf3or5 {
     private int getSumMul3or5StreamBest(int n){
         return IntStream
                     .range(0,n)
-                    .filter(i->i%3==0 || i%5==0)
+                    .filter(i->i % 3 ==0 || i%5==0)
                     .sum();
     }
 

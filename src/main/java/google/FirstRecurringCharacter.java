@@ -26,7 +26,7 @@ public class FirstRecurringCharacter {
     }
     /** Using memory => T(O)=O(N) and space=O(N)*/
     private static String getFirstRecurringCharacterUsingMemory(String str){
-         List<Character> inputs=new ArrayList<>();
+        List<Character> inputs=new ArrayList<>();
         char[] chars=str.toCharArray();
         for (char aChar : chars) {
             if (inputs.contains(aChar))
@@ -35,5 +35,7 @@ public class FirstRecurringCharacter {
         }
         return "none";
     }
+   //How to do this using stream
+
 
 }

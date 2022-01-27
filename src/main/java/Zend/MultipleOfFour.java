@@ -8,8 +8,8 @@ import java.util.stream.IntStream;
  */
 public class MultipleOfFour {
     private static void PrintMultipleOfFour() {
-        for (int i = 133; i >= 1; i--)
-          if (i % 4 == 0)
+        for (int i = 133; i >= 1; i--) //loop+map(to reverse order) so loop->IntStream.rangeClosed(from,to),  then map->map(i->to-i+from)
+          if (i % 4 == 0) //filter->filter(i->i % 4 == 0)
            System.out.println(i);
 
    }

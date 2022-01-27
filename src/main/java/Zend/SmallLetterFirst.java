@@ -14,10 +14,10 @@ public class SmallLetterFirst {
         //to separate small letter- by small or capital letter
         //if character upper case put in separate memory and do the same for lower case
         //merge them and convert to string
-        char[] inputs=str.toCharArray();
-        List<String>upperStr=new ArrayList<>();
-        List<String>lowerStr=new ArrayList<>();
-        List<String>result=new ArrayList<>();
+        char [] inputs = str.toCharArray();
+        List<String> upperStr = new ArrayList<>();
+        List<String> lowerStr = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         for (char input : inputs) {
             if (Character.isUpperCase(input))
                 upperStr.add("" + input);

@@ -31,7 +31,7 @@ public class FuzzyBuzz {
     private void fuzzBuzz(int n){
         IntStream
                 .rangeClosed(1,n)
-                .mapToObj( i->(i%5==0 && i%3==0)? "FuzzBuzz": (i%5==0)? "Buzz": (i%3==0)?"Fuzz":"")
+                .mapToObj( i->(i%5==0 && i%3==0) ? "FuzzBuzz" : (i%5==0) ? "Buzz" : (i%3==0) ? "Fuzz" : "")
                 .forEach(System.out::println);
     }
 

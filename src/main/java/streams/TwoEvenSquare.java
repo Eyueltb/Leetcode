@@ -31,7 +31,8 @@ public class TwoEvenSquare {
     private  List<Integer> evenSquare(List<Integer> numbers) {
         return numbers.stream()
                         .filter(n-> n%2==0)
-                        .map(n->n*n).limit(4)
+                        .map(n->n*n)
+                        .limit(4)
                         .collect(Collectors.toList());
     }
     /** return a list of length of each word in the list

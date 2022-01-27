@@ -2,7 +2,7 @@ package TopInterviewQuestions.arrays;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
+
 
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -53,7 +53,7 @@ public class TwoSumReturnIndex {
            }
            num_map.put(nums[i],i);
       }
-       throw new IllegalArgumentException("No match");
+      throw new IllegalArgumentException("No match");
    }
 
 }

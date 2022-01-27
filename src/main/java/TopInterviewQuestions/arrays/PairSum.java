@@ -51,5 +51,9 @@ public class PairSum {
         }
         return false;
     }
+    public boolean isPairSumUsingStream(int [] nums, int target ){
+        List<Integer> complement=new ArrayList<>();
 
+       return false;
+    }
 }
